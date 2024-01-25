@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //  mencari nilai //
+
+        // let pabp = 70;
+        // let pplg = 82;
+        // let pp = 77;
+        // let rata2 = (pabp + pplg + pp) / 3;
+        // let grade;
+
+        // if (rata2 >= 80 && rata2 <= 100) {
+        //     grade = "A";
+        // } else if (rata2 >= 75 && rata2 <= 80) {
+        //     grade = "B";
+        // } else if (rata2 >= 65 && rata2 <= 75) {
+        //     grade = "C";
+        // } else if (rata2 >= 45 && rata2 <= 65) {
+        //     grade = "D";
+        // } else if (rata2 >= 0 && rata2 <= 45) {
+        //     grade = "E";
+        // } else {
+        //     grade = "K";
+        // }
+
+        // console.log("Nilai rata-rata: " + rata2);
+        // console.log("Grade: " + grade);
+
+        //
+
+
+        let cetakInformasiPegawai = 3409112007;
+        let nama = "muhammad ikbar asapa";
+
+        let g = Math.floor(cetakInformasiPegawai / 100000000);
+        let dd = Math.floor((cetakInformasiPegawai % 100000000) / 1000000);
+        let mm = Math.floor((cetakInformasiPegawai % 1000000) / 10000);
+        let yyy = Math.floor((cetakInformasiPegawai % 10000) / 100);
+        let nn = cetakInformasiPegawai % 100;
+
+        let namaBulan;
+        if (mm === 1) namaBulan = "JAN";
+        else if (mm === 2) namaBulan = "FEB";
+        else if (mm === 3) namaBulan = "MAR";
+        else if (mm === 4) namaBulan = "APR";
+        else if (mm === 5) namaBulan = "MEI";
+        else if (mm === 6) namaBulan = "JUN";
+        else if (mm === 7) namaBulan = "JUL";
+        else if (mm === 8) namaBulan = "AGU";
+        else if (mm === 9) namaBulan = "SEP";
+        else if (mm === 10) namaBulan = "OKT";
+        else if (mm === 11) namaBulan = "NOV";
+        else if (mm === 12) namaBulan = "DEC";
+        else namaBulan = "tidak dikenal";
+
+        console.log(`Nama: ${nama}`);
+        console.log("Nomor Golongan: " + g);
+        console.log("Tanggal Lahir: " + dd + " " + namaBulan + " " + yyy);
+        console.log("Nomor Urut: " + nn);
+
+
+    
+
+
+    </script>
+</body>
+
+</html>
