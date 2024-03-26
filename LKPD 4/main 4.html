@@ -35,41 +35,58 @@
         // console.log("Nilai rata-rata: " + rata2);
         // console.log("Grade: " + grade);
 
-        //
+        
 
 
-        let cetakInformasiPegawai = 3409112007;
-        let nama = "muhammad ikbar asapa";
+        // let cetakInformasiPegawai = 3409112007;
+        // let nama = "muhammad ikbar asapa";
 
-        let g = Math.floor(cetakInformasiPegawai / 100000000);
-        let dd = Math.floor((cetakInformasiPegawai % 100000000) / 1000000);
-        let mm = Math.floor((cetakInformasiPegawai % 1000000) / 10000);
-        let yyy = Math.floor((cetakInformasiPegawai % 10000) / 100);
-        let nn = cetakInformasiPegawai % 100;
+        // let g = Math.floor(cetakInformasiPegawai / 1000000000);
+        // let dd = Math.floor((cetakInformasiPegawai % 100000000) / 1000000);
+        // let mm = Math.floor((cetakInformasiPegawai % 1000000) / 10000);
+        // let yyy = Math.floor((cetakInformasiPegawai % 10000) / 100);
+        // let nn = cetakInformasiPegawai % 100;
 
-        let namaBulan;
-        if (mm === 1) namaBulan = "JAN";
-        else if (mm === 2) namaBulan = "FEB";
-        else if (mm === 3) namaBulan = "MAR";
-        else if (mm === 4) namaBulan = "APR";
-        else if (mm === 5) namaBulan = "MEI";
-        else if (mm === 6) namaBulan = "JUN";
-        else if (mm === 7) namaBulan = "JUL";
-        else if (mm === 8) namaBulan = "AGU";
-        else if (mm === 9) namaBulan = "SEP";
-        else if (mm === 10) namaBulan = "OKT";
-        else if (mm === 11) namaBulan = "NOV";
-        else if (mm === 12) namaBulan = "DEC";
-        else namaBulan = "tidak dikenal";
+        // let namaBulan;
+        // if (mm === 1) namaBulan = "JAN";
+        // else if (mm === 2) namaBulan = "FEB";
+        // else if (mm === 3) namaBulan = "MAR";
+        // else if (mm === 4) namaBulan = "APR";
+        // else if (mm === 5) namaBulan = "MEI";
+        // else if (mm === 6) namaBulan = "JUN";
+        // else if (mm === 7) namaBulan = "JUL";
+        // else if (mm === 8) namaBulan = "AGU";
+        // else if (mm === 9) namaBulan = "SEP";
+        // else if (mm === 10) namaBulan = "OKT";
+        // else if (mm === 11) namaBulan = "NOV";
+        // else if (mm === 12) namaBulan = "DEC";
+        // else namaBulan = "bulan valid";
 
-        console.log(`Nama: ${nama}`);
-        console.log("Nomor Golongan: " + g);
-        console.log("Tanggal Lahir: " + dd + " " + namaBulan + " " + yyy);
-        console.log("Nomor Urut: " + nn);
+        // console.log(`Nama: ${nama}`);
+        // console.log("Nomor Golongan: " + g);
+        // console.log("Tanggal Lahir: " + dd + " " + namaBulan + " " + yyy);
+        // console.log("Nomor Urut: " + nn);
 
 
     
+            let detik;
+            let menit;
+            let jam;
 
+        if (detik + 1 == 60){
+            detik = 0;
+        
+            menit++
+
+            if(menit == 60){
+                menit = 0;
+
+                jam++;
+            }
+
+        }
+            console.log(detik)
+        
 
     </script>
 </body>
